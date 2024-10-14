@@ -249,3 +249,16 @@ nav .hamburgerMenu img {
     height: 13px;
   }
 }
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.bunny {
+  background-image: url(../assests/images/bunny.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+}
