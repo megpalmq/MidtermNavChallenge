@@ -8,10 +8,10 @@ nav {
   font-family: "Segoe UI";
   padding: 22px 13px 0 13px;
   position: relative;
-  background-color: cornflowerblue;
+  background-color: #c9d8a7;
   a {
     font-size: 16px;
-    color: white;
+    color: black;
     text-decoration: none;
   }
   .active {
@@ -94,7 +94,7 @@ nav {
     flex-direction: column;
     width: 100%;
     padding-top: 17px;
-    background-color: rgba(0, 0, 0, 0.142);
+    background-color: rgba(201, 216, 167, 0.142);
 
     .links a:hover {
       text-decoration: underline;
@@ -109,23 +109,6 @@ nav {
       gap: 10px;
       flex-direction: column;
       margin-bottom: 17px;
-    }
-    .navAccountButtons {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      border-top: 1px solid black;
-      width: 60%;
-      flex-direction: column;
-      padding-top: 10px;
-      a {
-        margin-bottom: 10px;
-        img {
-          position: relative;
-          top: 8px;
-          height: 30px;
-        }
-      }
     }
   }
   .hamburgerMenu {
