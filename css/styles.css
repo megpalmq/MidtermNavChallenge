@@ -30,11 +30,11 @@ nav {
   font-family: "Segoe UI";
   padding: 22px 13px 0 13px;
   position: relative;
-  background-color: cornflowerblue;
+  background-color: #c9d8a7;
 }
 nav a {
   font-size: 16px;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 nav .active {
@@ -117,7 +117,7 @@ nav .mobileClickables {
   flex-direction: column;
   width: 100%;
   padding-top: 17px;
-  background-color: rgba(0, 0, 0, 0.142);
+  background-color: rgba(201, 216, 167, 0.142);
 }
 nav .mobileClickables .links a:hover {
   text-decoration: underline;
@@ -132,23 +132,6 @@ nav .mobileClickables .links {
   gap: 10px;
   flex-direction: column;
   margin-bottom: 17px;
-}
-nav .mobileClickables .navAccountButtons {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border-top: 1px solid black;
-  width: 60%;
-  flex-direction: column;
-  padding-top: 10px;
-}
-nav .mobileClickables .navAccountButtons a {
-  margin-bottom: 10px;
-}
-nav .mobileClickables .navAccountButtons a img {
-  position: relative;
-  top: 8px;
-  height: 30px;
 }
 nav .hamburgerMenu {
   display: none;
@@ -249,12 +232,8 @@ nav .hamburgerMenu img {
     height: 13px;
   }
 }
-h1 {
-  display: flex;
-  justify-content: center;
-}
-
 .bunny {
+  display: flex;
   background-image: url(../assests/images/bunny.gif);
   background-position: center;
   background-size: cover;
