@@ -9,4 +9,7 @@ export function changeRoute() {
     $.get(`pages/${pageID}.html`, function (data) {
       $("#app").html(data);
     })
-}
+      .fail(function (e) {
+        $("#app").html(`${pageID} | Error ${e.status}: ${e.statusText}`);
+      });
+  }
