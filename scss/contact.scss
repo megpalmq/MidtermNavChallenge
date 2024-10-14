@@ -1,0 +1,12 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.pill {
+  background-image: url(../assests/images/pill.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+}
