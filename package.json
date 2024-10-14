@@ -15,18 +15,21 @@
     "node-addon-api": "^7.1.1",
     "picomatch": "^2.3.1",
     "readdirp": "^4.0.2",
-    "sass": "^1.79.5",
     "source-map-js": "^1.2.1",
     "to-regex-range": "^5.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sass": "^1.79.5"
+  },
   "scripts": {
     "serve": "live-server",
     "compile-sass": "sass scss/styles.scss css/styles.css -w --no-source-map"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  },
   "description": ""
 }
