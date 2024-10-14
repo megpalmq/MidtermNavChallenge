@@ -4,10 +4,12 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 html,
 body {
   height: 100%;
 }
+
 h1,
 h2,
 h3,
@@ -16,4 +18,17 @@ h5,
 h6,
 p {
   margin-bottom: 16px;
+}
+
+nav {
+  height: 50px;
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
 }
