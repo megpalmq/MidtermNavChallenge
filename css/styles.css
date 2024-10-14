@@ -247,19 +247,23 @@ nav .hamburgerMenu img {
   height: 50px;
 }
 
-.pill {
+.about {
   display: flex;
-  background-image: url(../assests/images/pill.gif);
+  flex-direction: column;
+  align-items: center;
+}
+.about h1 {
+  display: flex;
+  justify-content: center;
+}
+.about .colors-bunny {
+  background-image: url(../assests/images/uwu.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 700px;
+  width: 50%;
+  height: 600px;
 }
-.pill h1 {
-  justify-content: center;
-  background-color: darkblue;
-  height: 50px;
-  width: 150px;
-  color: white;
+.about p {
+  width: 50%;
 }
