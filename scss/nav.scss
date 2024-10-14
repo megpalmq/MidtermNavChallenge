@@ -1,12 +1,236 @@
 nav {
-  height: 50px;
-  background-color: cornflowerblue;
+  padding-top: 22px;
+  height: 107px;
+  border-bottom: 2px solid $site-black;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  font-family: "Segoe UI";
+  padding: 22px 13px 0 13px;
+  position: relative;
+  background-color: cornflowerblue;
+  a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+  }
+  .active {
+    font-weight: 700;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8vw;
+    img {
+      height: 73px;
+      width: 73px;
+    }
+    p {
+      font-weight: 400 !important;
+      transform: translateY(14px);
+      font-size: 16px;
+    }
+  }
+  .clickables {
+    transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex: 0.5;
+    .links {
+      gap: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex: 1;
+      margin-right: 2.7vw;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    .navAccountButtons a:hover {
+      text-decoration: underline;
+    }
+    .navAccountButtons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.8vw;
+      a {
+        padding-right: 60px;
+        color: $site-black;
+        vertical-align: middle;
+        position: relative;
+        img {
+          transform: translateX(12px);
+          position: absolute;
+          top: -12px;
+          height: 47px;
+        }
+        .cartImg {
+          padding-right: 0px;
+          transform: translateX(0px);
+        }
+      }
+    }
+  }
+  .mobileClickables {
+    display: none;
+    overflow: none;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    bottom: 0;
+    flex-direction: column;
+    transform: translateY(100%) scaleY(0);
+    transition-property: transform;
+    transition-timing-function: linear;
+    transition-duration: 0;
+    transform-origin: top;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 17px;
+    background-color: rgba(0, 0, 0, 0.142);
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+    .navAccountButtons a:hover {
+      text-decoration: underline;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 10px;
+      flex-direction: column;
+      margin-bottom: 17px;
+    }
+    .navAccountButtons {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      border-top: 1px solid black;
+      width: 60%;
+      flex-direction: column;
+      padding-top: 10px;
+      a {
+        margin-bottom: 10px;
+        img {
+          position: relative;
+          top: 8px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .hamburgerMenu {
+    display: none;
+    img {
+      cursor: pointer;
+      height: 20px;
+    }
+  }
+}
+/* Tablet Breakpoint MediaQuery */
+@media (max-width: $breakpoint-tablet) {
+  nav {
+    padding: 22px 2.5vw 0 2.5vw;
+    position: relative;
+
+    .hamburgerMenu {
+      display: none;
+      img {
+        cursor: pointer;
+        height: 20px;
+      }
+    }
+    .logo {
+      img {
+        height: 45px;
+        width: 45px;
+      }
+    }
+    .clickables {
+      display: none;
+    }
+    .mobileClickables {
+      display: flex;
+      opacity: 1;
+    }
+    .search {
+      max-width: 39%;
+      .input {
+        max-height: 23px !important;
+        input {
+          padding-left: 23px;
+          font-size: 15px;
+        }
+        img {
+          height: 36px;
+          margin-left: -7px;
+          transform: translateY(1px);
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+        }
+      }
+    }
+    .hamburgerMenu {
+      display: block;
+    }
+  }
 }
 
-nav a {
-  text-decoration: none;
-  color: #fff;
+/* Mobile Breakpoint MediaQuery */
+@media (max-width: $breakpoint-mobile) {
+  nav {
+    padding: 22px 2.5vw 0 2.5vw;
+    .logo {
+      img {
+        height: 30px;
+        width: 30px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+    .search {
+      height: 23px;
+      .input {
+        max-height: 16px !important;
+        input {
+          padding-left: 17px;
+          font-size: 10px;
+        }
+        img {
+          height: 30px;
+          margin-left: -7px;
+          transform: translateY(1px);
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+        }
+      }
+    }
+    .clickables {
+      display: none;
+    }
+    .search {
+      max-width: unset;
+      max-width: 39%;
+    }
+
+    .hamburgerMenu {
+      display: block;
+      img {
+        cursor: pointer;
+        height: 13px;
+      }
+    }
+  }
 }
