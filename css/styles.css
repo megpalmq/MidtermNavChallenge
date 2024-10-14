@@ -241,17 +241,25 @@ nav .hamburgerMenu img {
   width: 100%;
   height: 700px;
 }
-
-h1 {
-  display: flex;
+.bunny h1 {
+  background-color: beige;
   justify-content: center;
+  height: 50px;
 }
 
 .pill {
+  display: flex;
   background-image: url(../assests/images/pill.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 700px;
+}
+.pill h1 {
+  justify-content: center;
+  background-color: darkblue;
+  height: 50px;
+  width: 150px;
+  color: white;
 }
