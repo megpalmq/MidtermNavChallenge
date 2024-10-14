@@ -284,18 +284,3 @@ nav .hamburgerMenu img {
   width: 150px;
   color: white;
 }
-
-.duck {
-  display: flex;
-  background-image: url(../assests/images/duck.gif);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 700px;
-}
-.duck h1 {
-  background-color: beige;
-  justify-content: center;
-  height: 50px;
-}
