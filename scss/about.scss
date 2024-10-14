@@ -1,0 +1,21 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  .colors-bunny {
+    background-image: url(../assests/images/uwu.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 600px;
+  }
+
+  p {
+    width: 50%;
+  }
+}

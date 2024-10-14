@@ -262,3 +262,24 @@ h1 {
   width: 100%;
   height: 700px;
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about h1 {
+  display: flex;
+  justify-content: center;
+}
+.about .colors-bunny {
+  background-image: url(../assests/images/uwu.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 600px;
+}
+.about p {
+  width: 50%;
+}
